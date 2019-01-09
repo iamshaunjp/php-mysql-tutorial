@@ -1,12 +1,30 @@
 <?php 
 
-	define('NAME', 'Yoshi');
+	$stringOne = 'my email is ';
+	$stringTwo = 'mario123@thenetninja.co.uk';
 
-	// $name = 'Yoshi';
-	$age = 30;
+	echo $stringOne.$stringTwo;
 
-	// $name = 'Mario';
-	define('NAME', 'Mario');
+	$name = 'mario';
+
+	// concatenation
+	echo 'Hey, my name is '.$name;
+
+	// variable interpolation
+	echo "Hey, my name is $name"; 
+
+	// escaping characters
+	echo "the ninja screamed \"whaaa\"";
+	echo 'the ninja scream "whaaa"';
+
+	// get single characters
+	echo $name[1];
+
+	// string functions
+	echo strlen($name);
+	echo strtoupper($name);
+	echo strtolower($name);
+	echo str_replace('m', 'w', $name);
 
 ?>
 
@@ -17,10 +35,7 @@
 </head>
 <body>
 
-	<h1>User profile page</h1>
-
-	<div><?php echo NAME; ?></div>
-	<div><?php echo $age; ?></div>
+	<p><?php echo $name; ?></p>
 
 </body>
 </html>
