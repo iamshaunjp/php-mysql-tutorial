@@ -1,16 +1,29 @@
 <?php 
 
-	// if(isset($_GET['submit'])){
-	// 	echo $_GET['email'] . '<br />';
-	// 	echo $_GET['title'] . '<br />';
-	// 	echo $_GET['ingredients'] . '<br />';
-	// }
-
 	if(isset($_POST['submit'])){
-		echo htmlspecialchars($_POST['email']) . '<br />';
-		echo htmlspecialchars($_POST['title']) . '<br />';
-		echo htmlspecialchars($_POST['ingredients']) . '<br />';
-	}
+		
+		// check email
+		if(empty($_POST['email'])){
+			echo 'An email is required <br />';
+		} else{
+			echo htmlspecialchars($_POST['email']) . '<br />';
+		}
+
+		// check title
+		if(empty($_POST['title'])){
+			echo 'A title is required <br />';
+		} else{
+			echo htmlspecialchars($_POST['title']) . '<br />';
+		}
+
+		// check ingredients
+		if(empty($_POST['ingredients'])){
+			echo 'At least one ingredient is required <br />';
+		} else{
+			echo htmlspecialchars($_POST['ingredients']) . '<br />';
+		}
+
+	} // end POST check
 
 ?>
 
