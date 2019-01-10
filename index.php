@@ -1,45 +1,14 @@
 <?php 
 
-	// variable scope
+	//include('ninjass.php');
+	
+	//require('ninjass.php');
 
-	// local vars
+	//include 'ninjas.php';
 
-	function myFunc(){
-		$price = 10;
-		echo $price;
-	}
+	//require 'ninjas.php';
 
-	// myFunc();
-	// echo $price;
-
-	function myFuncTwo($age){
-		echo $age;
-	}
-
-	// myFuncTwo(25);
-	// echo $age;
-
-	// global variables
-
-	$name = 'mario';
-
-	// function sayHello(){
-	// 	global $name;
-	// 	$name = 'yoshi';
-	// 	echo "hello $name ";
-	// }
-
-	// sayHello();
-	// echo $name;
-
-	function sayBye(&$name){
-		$name = 'wario';
-		echo "bye $name ";
-	}
-
-	sayBye($name);
-	echo $name;
-
+	//echo 'end of php';
 
 ?>
 
@@ -49,6 +18,9 @@
 	<title>PHP Tutorials</title>
 </head>
 <body>
+
+	<?php include('content.php'); ?>
+	<?php include('content.php'); ?>
 
 </body>
 </html>
