@@ -7,9 +7,9 @@
 	// }
 
 	if(isset($_POST['submit'])){
-		echo $_POST['email'] . '<br />';
-		echo $_POST['title'] . '<br />';
-		echo $_POST['ingredients'] . '<br />';
+		echo htmlspecialchars($_POST['email']) . '<br />';
+		echo htmlspecialchars($_POST['title']) . '<br />';
+		echo htmlspecialchars($_POST['ingredients']) . '<br />';
 	}
 
 ?>
