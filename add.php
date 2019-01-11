@@ -35,6 +35,13 @@
 			}
 		}
 
+		if(array_filter($errors)){
+			//echo 'errors in form';
+		} else {
+			//echo 'form is valid';
+			header('Location: index.php');
+		}
+
 	} // end POST check
 
 ?>
