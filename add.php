@@ -55,7 +55,6 @@
 			} else {
 				echo 'query error: '. mysqli_error($conn);
 			}
-
 			
 		}
 
