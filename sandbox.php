@@ -1,16 +1,16 @@
 <?php 
 
-	// ternary operators
+	// superglobals
 
-	$score = 50;
+	//$_GET['name'], $_POST['name']
 
-	// if($score > 40){
-	// 	echo 'high score!';
-	// } else {
-	// 	echo 'low score!';
-	// }
+	echo $_SERVER['SERVER_NAME'] . '<br />';
+	echo $_SERVER['REQUEST_METHOD'] . '<br />';
+	echo $_SERVER['SCRIPT_FILENAME'] . '<br />';
+	echo $_SERVER['PHP_SELF'] . '<br />';
 
-	// echo $score > 40 ? 'high score!' : 'low score!';
+	// $_COOKIE, $_SESSION
+
 
 ?>
 
@@ -20,8 +20,6 @@
 	<title>php tuts</title>
 </head>
 <body>
-
-	<h2><?php echo $score > 40 ? 'high score!' : 'low score!'; ?></h2>
 
 </body>
 </html>
