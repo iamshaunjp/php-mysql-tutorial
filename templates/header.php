@@ -9,7 +9,7 @@
     session_unset();
   }
 
-  $name = htmlspecialchars($_SESSION['name']);
+  $name = $_SESSION['name'] ?? 'Guest';
 
 ?>
 
