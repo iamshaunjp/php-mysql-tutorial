@@ -43,7 +43,7 @@
 
 	<?php include('templates/header.php'); ?>
 
-	<div class="container center">
+	<div class="container center grey-text">
 		<?php if($pizza): ?>
 			<h4><?php echo $pizza['title']; ?></h4>
 			<p>Created by <?php echo $pizza['email']; ?></p>
