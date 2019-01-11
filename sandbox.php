@@ -9,6 +9,14 @@
 		header('Location: index.php');
 	}
 
+	// spaceship operator
+	//$result = 5 <=> 6;
+	//$result = 5 <=> 4;
+	//$result = 5 <=> 5;
+	$result = 'shaun' <=> 'yoshi';
+
+	echo $result;
+
 ?>
 
 <!DOCTYPE html>
