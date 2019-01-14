@@ -1,34 +1,30 @@
-<?php 
+<?php
+
+	$file = 'quotes.txt'; 
 	
-	// $quotes = readfile("readme.txt");
-	// echo $quotes;
+	// opening a file for reading
+	// $handle = fopen($file, 'r');
 
-	$file = 'readme.txt';
+	// read the file
+	// echo fread($handle, filesize($file));
+	// echo fread($handle, 112);
 
-	if(file_exists($file)){
+	// read a single line
+	// echo fgets($handle);
+	// echo fgets($handle);
 
-		// read file
-		echo readfile($file) . '<br />';
+	// read a single character
+	// echo fgetc($handle);
+	// echo fgetc($handle);
 
-		// copy file
-		copy($file, 'quotes.txt');
+	// $handle = fopen($file, 'r+');
+	// $handle = fopen($file, 'a+');
 
-		// absolute path
-		echo realpath($file) . '<br />';
+	// writing to a file
+	// fwrite($handle, "\nEverything popular is wrong.");
 
-		// file size
-		echo filesize($file) . '<br />';
+	// fclose($file);	
 
-		// rename the file
-		rename($file, 'test.txt');
-
-	} else {
-		echo 'file does not exist';
-	}
-
-	// make directory
-	mkdir('quotes');
-
-
+	unlink($file);
 
 ?>
