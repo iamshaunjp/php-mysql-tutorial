@@ -5,7 +5,7 @@
 
 	// basic operators - *, /, +, -, ^
 
-	echo $pi * $radius^2;
+	echo $pi * $radius**2;
 
 	// order of operation (B I D M A S)
 
